@@ -1,0 +1,43 @@
+.btns{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+.btns button{
+    width: 200px;
+    height: 30px;
+    margin: 5px;
+
+}
+li{
+    list-style: none;
+    display: flex;
+    
+}
+h3,li h4{
+    font-family:Arial, Helvetica, sans-serif;
+}
+#showAns{
+    background-color: aquamarine;
+    height: 12vh;
+    text-align: start;
+    font-family: sans-serif;
+    margin: 0;
+}
+#showAns h2{
+    padding-top: 20px;
+    padding-left: 10px;
+}
+#score{
+    background-color: rgb(87, 139, 122);
+    height: 15vh;
+    text-align: center;
+    font-family: sans-serif;
+    margin: 0;
+
+}
+#score h2{
+    position: relative;
+    bottom: -15px;
+}
+
