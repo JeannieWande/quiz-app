@@ -1,8 +1,0 @@
-/vendor/
-composer.json
-composer.lock
-doctrine-dbal*
-doctrine-dbal.bat
-laravel*
-laravel.bat
-.gitignore
