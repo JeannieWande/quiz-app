@@ -132,7 +132,7 @@ function multipleChoices(){
        
             let input= document.createElement('input');
             input.type='radio';
-            input.name='answer';
+            input.name='answer'+ i;
             input.value= value; 
             input.addEventListener('click', function(){
                 submitBtn.disabled=false;
@@ -189,7 +189,9 @@ nextBtn.addEventListener('click', function(){
 //selecting radio values 
 let selectedValue;
 function selectedAnswer() {
-    let selected = document.querySelectorAll('input[name="answer"]');
+    let selected = document.querySelectorAll('input[name~="answer'+ currentQuestion+'"]');
+    console.log(selected[1].value)
+
         selected.forEach(function(selectedbtn){
             selectedbtn.addEventListener('change', function(){
                let select=this;
@@ -219,6 +221,20 @@ function selectedAnswer() {
             boxTxt.innerHTML= 'Incorrect';
             boxTxt.style.color = 'red';
           }
+          for (let i = 0; i < arr.length; i++) {
+            selected.forEach(function(radio){
+                if(radio[i].checked){
+                    radio.disabled=false;
+                }else{
+                    radio.disabled=true;
+                }
+                console.log('radio')
+    
+              });
+     
+            
+          }
+      
 
           submitBtn.disabled=true;
 
