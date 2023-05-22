@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interactive quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div id="starter">
+            <h1>Questions On Colors</h1>
+            <p>Answer all Questions</p>
+            <button type="submit" id='startQuiz' onclick="startQuiz()">Start Quiz</button>
+        </div>
+      
+        <div id="questions">
+            <div id="num"></div>
+            <div id="displayTop">
+                <div id="displayBox"></div>
+                <div id="displayScore"></div>
+            </div>
+
+          
+        </div>
+        <div id="ansBox"></div>
+        <div class="btns">
+            <button id="prev"  type="button">Previous</button>
+            <button id="submit" type="submit">Submit</button>
+            <button id="next" type="button">Next</button>
+        </div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+#starter{
+    text-align: center;
+    margin-top: 100px;
+    display: block;
+}
+#starter button{
+    width: 150px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 5px;
+    background-color: rgb(166, 239, 239);
+   
+}
+li{
+   display: flex;
+   list-style: none;
+}
+.btns{
+    display: flex;
+    justify-content:start;
+  
+
+}
+#prev,#submit,#next{
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: rgb(166, 232, 232);
+    display: none;
+    margin: 10px;
+    
+}
+
+#num{
+    margin-left:500px;
+    font-size: 25px;
+
+}
+#ansBox{
+    background-color: rgba(0,0,0,0.2);
+    margin: 5px 0px 5px 0px;
+    display: none;
+    font-size: 25px;
+    padding: 10px;
+    height: 30px;
+    width: 50%;
+  
+
+  
+}
+#displayTop{
+    background-color: rgb(179, 251, 179);
+    text-align: start;
+    margin-left: 10px;
+    display: none;
+    font-size: 25px;
+    padding: 10px;
+    justify-content: space-between;
+
+}
